@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'saira_condensed-black.ttf';
+  src: url('/assets/fonts/Saira_Condensed-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'saira_condensed-bold.ttf';
+  src: url('/assets/fonts/Saira_Condensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'saira_condensed-light.ttf';
+  src: url('/assets/fonts/Saira_Condensed-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'saira_condensed-Medium.ttf';
+  src: url('/assets/fonts/Saira_Condensed-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'saira_condensed-regular.ttf';
+  src: url('/assets/fonts/Saira_Condensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'openSans-bold.ttf';
+  src: url('/assets/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'openSans-light.ttf';
+  src: url('/assets/fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'openSans-medium.ttf';
+  src: url('/assets/fonts/OpenSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'openSans-semiBold.ttf';
+  src: url('/assets/fonts/Saira_Condensed-Regular.ttf') format('truetype');
+  /* font-weight: normal;
+  font-style: normal; */
+}@font-face {
+  font-family: 'openSans-Regular.ttf';
+  src: url('/assets/fonts/openSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kalameh-Black';
+  src: url('/src/assets/fonts/Kalameh-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'Kalameh-Regular';
+  src: url('/src/assets/fonts/Kalameh-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kalameh-Medium';
+  src: url('/src/assets/fonts/Kalameh-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'saira_condensed-regular.ttf';
+  src: url('/src/assets/fonts/Saira_Condensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'openSans-bold.ttf';
+  src: url('/assets/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'openSans-light.ttf';
+  src: url('/assets/fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'openSans-medium.ttf';
+  src: url('/assets/fonts/OpenSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'openSans-semiBold.ttf';
+  src: url('/src/assets/fonts/Saira_Condensed-Regular.ttf') format('truetype');
+  /* font-weight: normal;
+  font-style: normal; */
+}@font-face {
+  font-family: 'openSans-Regular.ttf';
+  src: url('/src/assets/fonts/openSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bahalfont1';
+  src: url('/src/assets/fonts/EduVICWANTBeginner-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'bahalfont2';
+  src: url('src/assets/fonts/EduVICWANTBeginner-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'bahalfont3';
+  src: url('src/assets/fonts/EduVICWANTBeginner-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}@font-face {
+  font-family: 'bahalfont4';
+  src: url('src/assets/fonts/EduVICWANTBeginner-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  /* margin: 0;
+  padding: 0; */
+  /* box-sizing: border-box; */
+  /* font-family: 'kalameh-Regular'; */
+}
+body{
+  background-color: #121212;
+  color: #fff;
+}
+.image-bg{
+
+  background-image: url('/public/amirhossein1.jpg');
+  background-position:right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+
+}
+.text-header{
+margin-top: 90px;
+font-size: 30px;
+font-family: 'bahalfont1'!important;
+}
+.text-header h1{
+  margin-top: 20p
+}
+
+/* .custom-toolbar {
+  box-shadow: 0px .5px px rgba(255, 255, 255, 1);
+} */
+.drawer-item{
+  color: #262626;
+  font-size: 18px;
+
+}
