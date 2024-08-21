@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header elevated>
+    <q-header class="lt-lg" elevated>
       <q-toolbar class=" text-white custom-toolbar" style="height: 100px; background-color: #1A1A1A;">
         <!-- <q-btn class="q-pr-md q-pl-xs" flat round icon="menu" @click="toggleLeftDrawer" /> -->
         <!-- <q-separator dark vertical inset /> -->
@@ -13,38 +13,21 @@
 
       </q-toolbar>
     </q-header>
+    <q-header class="gt-md" elevated>
+      <q-toolbar class=" text-white custom-toolbar" style="height: 100px; background-color: #fff;">
+        <!-- <q-btn class="q-pr-md q-pl-xs" flat round icon="menu" @click="toggleLeftDrawer" /> -->
+        <!-- <q-separator dark vertical inset /> -->
+        <q-avatar style="width: 50px; height: 50px;">
+        <img src="/public/photo-output.png" style="width: 50px; height: 50px;" >
+      </q-avatar>
 
-    <!-- <q-drawer v-model="leftDrawerOpen" show-if-above side="left" overlay>
-      <q-list>
-        <q-item clickable v-ripple>
-          <q-item-section avatar>
-            <q-icon name="home" />
-          </q-item-section>
-          <q-item-section>
-            خانه
-          </q-item-section>
-        </q-item>
+      <q-space />
+      <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
 
-        <q-item clickable v-ripple>
-          <q-item-section avatar>
-            <q-icon name="info" />
-          </q-item-section>
-          <q-item-section>
-            درباره ما
-          </q-item-section>
-        </q-item>
+      </q-toolbar>
+    </q-header>
 
-        <q-item clickable v-ripple>
-          <q-item-section avatar>
-            <q-icon name="contact_page" />
-          </q-item-section>
-          <q-item-section>
-            تماس با ما
-          </q-item-section>
-        </q-item>
-      </q-list>
-    </q-drawer> -->
-    <q-drawer
+    <!-- <q-drawer
         v-model="drawer"
         show-if-above
         :width="200"
@@ -103,6 +86,32 @@
             <div>@amirhoseeintakhti</div>
           </div>
         </q-img>
+      </q-drawer> -->
+      <q-drawer
+        v-model="drawer"
+        :width="200"
+        :breakpoint="500"
+        overlay
+        bordered
+        :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'"
+      >
+        <q-scroll-area class="fit">
+          <q-list>
+
+            <template v-for="(menuItem, index) in menuList" :key="index">
+              <q-item clickable :active="menuItem.label === 'Outbox'" v-ripple>
+                <q-item-section avatar>
+                  <q-icon :name="menuItem.icon" />
+                </q-item-section>
+                <q-item-section>
+                  {{ menuItem.label }}
+                </q-item-section>
+              </q-item>
+              <q-separator :key="'sep' + index" v-if="menuItem.separator" />
+            </template>
+
+          </q-list>
+        </q-scroll-area>
       </q-drawer>
 
     <q-page-container>
