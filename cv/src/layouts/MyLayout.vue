@@ -13,18 +13,22 @@
 
       </q-toolbar>
     </q-header>
-    <q-header class="gt-md" elevated>
-      <q-toolbar class=" text-white custom-toolbar" style="height: 100px; background-color: #fff;">
-        <!-- <q-btn class="q-pr-md q-pl-xs" flat round icon="menu" @click="toggleLeftDrawer" /> -->
-        <!-- <q-separator dark vertical inset /> -->
-        <q-avatar style="width: 50px; height: 50px;">
-        <img src="/public/photo-output.png" style="width: 50px; height: 50px;" >
-      </q-avatar>
-
-      <q-space />
-      <q-btn flat @click="drawer = !drawer" round dense icon="menu" />
-
-      </q-toolbar>
+    <q-header class="gt-md bg-transparent" >
+      <div class="row ">
+      <div class="col-3">
+        <img class="q-ml-md" src="public/photo-output.png" alt="" style="width: 80px; height: 80px;">
+      </div>
+      <div class="col-9 text-center">
+        <nav>
+          <ul>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">servise</a></li>
+            <li><a href="">about</a></li>
+          </ul>
+        </nav>
+      </div>
+     </div>
     </q-header>
 
     <!-- <q-drawer
